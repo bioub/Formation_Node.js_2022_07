@@ -1,3 +1,5 @@
+const { Jeu } = require('./jeu');
+
 const partie = new Jeu();
 partie.jouer();
 

@@ -1,5 +1,6 @@
 // importe readline depuis le binaire de Node (readline n'est pas global)
 const readline = require('readline'); // readline.js dans le binaire (.exe) de Node.js
+const { getRandomInt } = require('./random');
 
 class Jeu {
   constructor() {
@@ -33,3 +34,5 @@ class Jeu {
     });
   }
 }
+
+exports.Jeu = Jeu;

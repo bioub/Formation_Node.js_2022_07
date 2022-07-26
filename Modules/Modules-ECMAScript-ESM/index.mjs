@@ -1,4 +1,4 @@
-import { hello } from './hello.mjs';
+import { hello } from "./hello.mjs";
 
 console.log(hello('Romain'));
 
