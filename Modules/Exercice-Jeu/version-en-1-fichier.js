@@ -35,8 +35,18 @@ class Jeu {
         this.rl.close();
       }
     });
+
   }
 }
 
 const partie = new Jeu();
 partie.jouer();
+
+
+// ^
+// |
+// |                question                   question
+// |question        jouer                      jouer
+// |jouer    ..⟳..  =>       ..⟳..             =>
+// 0----------------ENTREE---------------------ENTREE---->
+// Sortie
