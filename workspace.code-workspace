@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "Modules"
+		},
+		{
+			"path": "APIs-Node"
+		},
+		{
+			"path": "JavaScript-Async"
+		},
+		{
+			"path": "Exercice-Build"
+		}
+	],
+	"settings": {}
+}
