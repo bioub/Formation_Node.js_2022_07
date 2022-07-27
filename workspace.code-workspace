@@ -11,6 +11,9 @@
 		},
 		{
 			"path": "Exercice-Build"
+		},
+		{
+			"path": "Hello-Express"
 		}
 	],
 	"settings": {}
