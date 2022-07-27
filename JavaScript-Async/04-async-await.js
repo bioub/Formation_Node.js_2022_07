@@ -20,3 +20,7 @@ async function copy() {
 }
 
 copy();
+
+(async () => {
+
+})();

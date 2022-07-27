@@ -24,7 +24,7 @@ console.log(process.memoryUsage());
 console.log(process.env);
 console.log(process.env.PATH);
 
-// si NODE_ENV vaut production, la commande npm install, n'installerais pas les devDependencies
+// si NODE_ENV vaut production, la commande npm install, n'installerait pas les devDependencies
 console.log(process.env.NODE_ENV);
 
 // si 0 tout va bien

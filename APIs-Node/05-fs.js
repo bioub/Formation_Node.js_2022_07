@@ -27,6 +27,8 @@ fs.readFile(prettierRcPath, (err, buffer) => {
 // au moment de lire le fichier le thread est libéré (le fichier est lu dans un autre thread, transparent en JS appelée Worker)
 // les lignes ne s'exécutent pas dans l'ordre
 // Promise fait partie de la norme JS (depuis 2015)
+fs.promises.readFile(prettierRcPath)
+  .then((buffer) => console.log(buffer.toString('utf-8')))
 fsp.readFile(prettierRcPath)
   .then((buffer) => console.log(buffer.toString('utf-8')))
 
