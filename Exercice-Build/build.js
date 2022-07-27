@@ -17,11 +17,16 @@ async function rmAndMkdir(dirPath) {
 }
 
 async function buildJs() {
-  const horlogeBuffer = await fs.readFile(horlogeJsPath);
-  const indexBuffer = await fs.readFile(indexJsPath);
+  // const horlogeBuffer = await fs.readFile(horlogeJsPath);
+  // const indexBuffer = await fs.readFile(indexJsPath);
+  const buffers = await Promise.all([
+    fs.readFile(horlogeJsPath),
+    fs.readFile(indexJsPath)
+  ]);
 
-  await fs.appendFile(appJsDistPath, horlogeBuffer);
-  await fs.appendFile(appJsDistPath, indexBuffer);
+  // await fs.appendFile(appJsDistPath, horlogeBuffer);
+  // await fs.appendFile(appJsDistPath, indexBuffer);
+  await fs.writeFile(appJsDistPath, Buffer.concat(buffers));
 }
 
 async function buildHtml() {
